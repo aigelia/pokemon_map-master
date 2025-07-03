@@ -24,9 +24,11 @@
 pip install -r requirements.txt
 ```
 
-Запустите разработческий сервер.
+Запустите миграции, а после - разработческий сервер.
 
 ```sh
+python3 manage.py makemigrations
+python3 manage.py migrate
 python3 manage.py runserver
 ```
 
